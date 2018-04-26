@@ -1,23 +1,21 @@
 body {
-    background-color: rgb(147, 10, 10);
-    color: #c4c4c7;
+    background-color: #212120;
+    color: #F2F1EE;
     padding: 0;
     margin: 0;
+font-family: 'Open Sans', sans-serif;
 }
 h1 {
   text-align: center;
   text-transform: uppercase;
-  color: white;
   font-size: 60px;
-  background-color: rgb(73, 71, 71);
+  background-color: #362036;
   padding: 20px;
-  font-weight: bold;
-  font-family: nixie one;
+  font-family: 'Archivo Black', sans-serif;
 }
 h4, h2 {
   color: white;
   margin: 3px;
-  font-family: nixie one;
 }
 button {
   background-color: red;
@@ -31,12 +29,16 @@ article {
     padding: 10px;
     margin: 5px;
     display: inline-grid;
-    background-color: #000000;
+    background-color: #362036;
     border-radius: 10px;
+    color: #F2F1EE;
 }
 
 article img {
     float: left;
     margin: 0 10px 10px 0;
     width: 300px;
+}
+a:visited, a:active, a {
+  color: #81AD04;
 }

@@ -7,13 +7,15 @@ $database->connect();
 $superhero_id = $_GET["superhero_id"];
 
 $superhero = $database->query("SELECT * FROM superheroes WHERE id = '$superhero_id'")[0];
-$comments = $database->query("SELECT * FROM comments LEFT JOIN superheroes ON comments.superhero_from = superheroes.id WHERE superhero_to = $superhero_id");
+$comments = $database->query("SELECT * FROM comments
+LEFT JOIN superheroes ON comments.superhero_from = superheroes.id WHERE superhero_to = $superhero_id");
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title><?php echo $superhero["name"];?> - Superdating - love is power</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Open+Sans" rel="stylesheet">
 </head>
 <body>
 <h1><?php echo $superhero["name"];?></h1>
